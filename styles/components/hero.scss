@@ -1,0 +1,35 @@
+.hero{
+    align-items: center;
+    background-image: url('./../../public/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 100%;
+    &:after{
+        content: '';
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    h2{
+        font-size: 60px;
+        position: relative;
+        z-index: 2;
+    }
+    @media screen and (max-width: 580px) {
+        height: 400px;
+        margin-bottom: 30px;
+        padding: 40px 0;
+        h2{
+            font-size: 40px;
+        }
+    }
+}

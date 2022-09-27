@@ -1,0 +1,18 @@
+.footer{
+    background: #C4A300;
+    padding: 100px 0;
+    h4{
+        color: #000000;
+        font-size: 40px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .navigation{
+        a{
+            color: #000000;
+        }
+    }
+    @media screen and (max-width: 580px) {
+        padding: 30px 0;
+    }
+}
