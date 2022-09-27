@@ -1,9 +1,7 @@
 import React from 'react';
 import { Navigation } from '../Navigation';
 
-export interface FooterInterface {}
-
-const Footer: React.FC<FooterInterface> = () => {
+const Footer: React.FC = () => {
 	return (
 		<footer className='footer'>
 			<div className="wrapper">

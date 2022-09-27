@@ -1,8 +1,6 @@
 import { Navigation } from "../Navigation";
 
-export interface HeaderInterface {}
-
-const Header: React.FC<HeaderInterface> = () => {
+const Header: React.FC = () => {
 	return (
 		<header className='header'>
 			<div className="wrapper">

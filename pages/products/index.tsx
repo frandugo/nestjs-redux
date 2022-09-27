@@ -6,6 +6,8 @@ import { Header } from '@/components/Header';
 import { MainLayout } from '@/components/Layouts/MainLayout';
 import { Footer } from '@/components/Footer';
 
+import { formatCurrency } from '@/helpers/currency'
+
 const Product: React.FC<ProductsInterface> = ({ products }) => {
   	return (
 		<MainLayout title="Store Application - Products">
@@ -22,7 +24,7 @@ const Product: React.FC<ProductsInterface> = ({ products }) => {
 												<img src={ image } alt={ title } />
 											</div>
 											<h2 className="product__title">{ title }</h2>
-											<span className="product__price">{ price }</span>
+											<span className="product__price">{ formatCurrency(price) }</span>
 										</a>	
 									</Link>	
 								</div>

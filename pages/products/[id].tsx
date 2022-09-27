@@ -8,6 +8,8 @@ import { addProduct } from '@/store/slices/productSlice'
 import { Header } from '@/components/Header';
 import { MainLayout } from '@/components/Layouts/MainLayout';
 
+import { formatCurrency } from '@/helpers/currency'
+
 
 const ProductDetail: React.FC<ProductInterface> = ({ product: { id, title, image, description, price } }) => {
 	const dispatch = useDispatch()
@@ -47,7 +49,7 @@ const ProductDetail: React.FC<ProductInterface> = ({ product: { id, title, image
 						<div className="product_detail__info">
 							<h2 className="product_detail__title">{ title }</h2>
 							<p className="product_detail__description">{ description }</p>
-							<span className="product_detail__price">{ price }</span>
+							<span className="product_detail__price">{ formatCurrency(price) }</span>
 							<div className="product_detail__quantity">
 								<button onClick={ removeProductQuantity }>-</button>
 								<input type="number" onChange={handleQuantity} value={ quantity }/>

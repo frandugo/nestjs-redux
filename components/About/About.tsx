@@ -1,6 +1,4 @@
-export interface AboutInterface {}
-
-const About: React.FC<AboutInterface> = () => {
+const About: React.FC = () => {
 	return (
 		<section className='about'>
 			<div className="wrapper">

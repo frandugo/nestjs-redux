@@ -1,7 +1,6 @@
 import React from 'react'
-export interface HeroInterface {}
 
-const Hero: React.FC<HeroInterface> = () => {
+const Hero: React.FC = () => {
 	return (
 		<section className="hero">
 			<h2>Products Store</h2>

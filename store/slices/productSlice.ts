@@ -27,15 +27,15 @@ export const productSlice = createSlice({
             }else{
                 state.cart.push(action.payload)
             }            
-            state.cart.map((item) : any => {
+            state.cart.map((item : any) : any => {
                 total = total + (item?.price * item?.quantity)
             })
             state.total = total
         },
         removeProduct: (state, action: PayloadAction<number>): any => {
             let total: number = 0
-            const productFiltered = state.cart.filter(product => product.id !== action.payload)
-            productFiltered.map((item) : any => {
+            const productFiltered = state.cart.filter((product: any) => product.id !== action.payload)
+            productFiltered.map((item: any) : any => {
                 total = total + (item?.price * item?.quantity)
             })
             return {
